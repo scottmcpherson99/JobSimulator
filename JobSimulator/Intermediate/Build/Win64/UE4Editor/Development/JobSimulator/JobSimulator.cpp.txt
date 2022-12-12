@@ -1,0 +1,2 @@
+D:\Unreal Projects\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\Definitions.JobSimulator.h
+D:\Unreal Projects\JobSimulator\Source\JobSimulator\JobSimulator.h

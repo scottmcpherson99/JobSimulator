@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\JobSimulator.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{0A3341D7-A96D-495F-915F-EE8C457015F1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\JobSimulator.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\JobSimulatorEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{B599C83A-5D55-4CC0-8FFA-E4615CF678DB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\JobSimulator">
+      <UniqueIdentifier>{387D447B-A4FE-46A1-AC66-70A3C64D7428}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\JobSimulator\JobSimulator.Build.cs">
+      <Filter>Source\JobSimulator</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\JobSimulator\JobSimulator.cpp">
+      <Filter>Source\JobSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\JobSimulator\JobSimulator.h">
+      <Filter>Source\JobSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\JobSimulator\JobSimulatorGameModeBase.cpp">
+      <Filter>Source\JobSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\JobSimulator\JobSimulatorGameModeBase.h">
+      <Filter>Source\JobSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\JobSimulator\PlayerCharacter.cpp">
+      <Filter>Source\JobSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\JobSimulator\PlayerCharacter.h">
+      <Filter>Source\JobSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\JobSimulator\ProductBase.cpp">
+      <Filter>Source\JobSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\JobSimulator\ProductBase.h">
+      <Filter>Source\JobSimulator</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

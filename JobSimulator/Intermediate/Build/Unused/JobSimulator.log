@@ -1,0 +1,11 @@
+﻿  Building JobSimulatorEditor...
+  Using Visual Studio 2019 14.30.30706 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 4 actions with 16 processes...
+    [1/4] ProductBase.cpp
+    [2/4] UE4Editor-JobSimulator-0007.lib
+       Creating library D:\Unreal Projects\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\UE4Editor-JobSimulator-0007.lib and object D:\Unreal Projects\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\UE4Editor-JobSimulator-0007.exp
+    [3/4] UE4Editor-JobSimulator-0007.dll
+       Creating library D:\Unreal Projects\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\UE4Editor-JobSimulator-0007.suppressed.lib and object D:\Unreal Projects\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\UE4Editor-JobSimulator-0007.suppressed.exp
+    [4/4] JobSimulatorEditor.target
+  Total time in Parallel executor: 57.80 seconds
+  Total execution time: 58.58 seconds
