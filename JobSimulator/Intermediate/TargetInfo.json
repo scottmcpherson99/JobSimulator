@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "JobSimulator",
-			"Path": "D:\\Unreal Projects\\JobSimulator\\Source\\JobSimulator.Target.cs",
+			"Path": "D:\\Unreal Projects\\GitHub\\JobSimulator\\JobSimulator\\Source\\JobSimulator.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "JobSimulatorEditor",
-			"Path": "D:\\Unreal Projects\\JobSimulator\\Source\\JobSimulatorEditor.Target.cs",
+			"Path": "D:\\Unreal Projects\\GitHub\\JobSimulator\\JobSimulator\\Source\\JobSimulatorEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeJobSimulator_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xCB6DF4BC,
-				0x5A405C1A,
+				0x7BE5527B,
+				0x9EFDA7AB,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

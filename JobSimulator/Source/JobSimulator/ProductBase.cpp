@@ -24,6 +24,8 @@ AProductBase::AProductBase()
 	//create the trigger box
 	TriggerBox = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComp"));
 	TriggerBox->SetupAttachment(RootComponent);
+
+	SetProductID("Base");
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -39,6 +41,20 @@ void AProductBase::BindToInput()
 	{
 		InputComponent->BindAction("Interact", IE_Pressed, this, &AProductBase::OnInteraction);
 	}
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// SettersandGetters
+void AProductBase::SetProductID(FString productID_)
+{
+	productID = productID_;
+}
+
+FString AProductBase::GetProductID() const
+{
+	return productID;
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -78,7 +94,6 @@ void AProductBase::OnTriggerBoxOverlap(UPrimitiveComponent* OverlappedComponent,
 		if (playerCharacter != nullptr && playerController != nullptr)
 		{
 			EnableInput(playerController);
-			GEngine->AddOnScreenDebugMessage(-1, 10, FColor::Green, FString::Printf(TEXT("Input Enabled")));
 		}
 }
 
@@ -89,7 +104,6 @@ void AProductBase::OnComponentEndOverlap(UPrimitiveComponent* OverlappedComponen
 	if (playerCharacter != nullptr && playerController != nullptr)
 	{
 		DisableInput(playerController);
-		GEngine->AddOnScreenDebugMessage(-1, 10, FColor::Green, FString::Printf(TEXT("Input Disabled")));
 	}
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -99,6 +113,12 @@ void AProductBase::OnComponentEndOverlap(UPrimitiveComponent* OverlappedComponen
 // Gameplay
 void AProductBase::OnInteraction()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 10, FColor::Green, FString::Printf(TEXT("Player Interacted")));
+	ACharacter* character_ = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
+	APlayerCharacter* playerCharacter = Cast<APlayerCharacter>(character_);
+
+	if (playerCharacter != nullptr)
+	{
+		playerCharacter->SetHoldingProduct(productID);
+	}
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////

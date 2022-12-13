@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\Unreal Projects\\JobSimulator\\Source\\JobSimulator\\JobSimulator.Build.cs",
-		"D:\\Unreal Projects\\JobSimulator\\Source\\JobSimulator.Target.cs",
-		"D:\\Unreal Projects\\JobSimulator\\Source\\JobSimulatorEditor.Target.cs"
+		"D:\\Unreal Projects\\GitHub\\JobSimulator\\JobSimulator\\Source\\JobSimulator\\JobSimulator.Build.cs",
+		"D:\\Unreal Projects\\GitHub\\JobSimulator\\JobSimulator\\Source\\JobSimulator.Target.cs",
+		"D:\\Unreal Projects\\GitHub\\JobSimulator\\JobSimulator\\Source\\JobSimulatorEditor.Target.cs"
 	],
 	"EngineVersion": "4.26.2"
 }

@@ -1,0 +1,24 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-JobSimulator-0014.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\JobSimulatorEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\JobSimulator.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\JobSimulatorGameModeBase.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\PlayerCharacter.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\ProductBase.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\Product_Lamp.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\Product_TV.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\JobSimulator.init.gen.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\JobSimulatorGameModeBase.gen.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\PlayerCharacter.gen.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\ProductBase.gen.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\Product_Lamp.gen.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\Product_TV.gen.cpp.obj"
+"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\Default.rc2.res"
+/OUT:"D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Development\JobSimulator\UE4Editor-JobSimulator-0014.lib"
+/INCLUDE:IMPLEMENT_MODULE_JobSimulator

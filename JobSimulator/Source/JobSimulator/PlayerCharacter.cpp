@@ -5,7 +5,7 @@
 #include "Camera/CameraComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
-
+#include "JobSimulatorGameModeBase.h"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Sets default values
@@ -18,8 +18,33 @@ APlayerCharacter::APlayerCharacter()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(RootComponent); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = true;
+
+	// set default player's attributes
+	holdingProduct = FString("None");
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// <SettersandGetters>
+void APlayerCharacter::SetHoldingProduct(FString holdingProduct_)
+{
+	holdingProduct = holdingProduct_;
+
+	// update the item holding on the game widget
+	//find the current gamemode and update the players stats on the displayed widget
+	AJobSimulatorGameModeBase* gameMode = Cast<AJobSimulatorGameModeBase>((AJobSimulatorGameModeBase*)GetWorld()->GetAuthGameMode());
+	if (gameMode != nullptr)
+	{
+		gameMode->GetGameWidget()->UpdateProductHolding();
+	}
+}
+
+FString APlayerCharacter::GetHoldingProduct() const
+{
+	return holdingProduct;
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
