@@ -61,7 +61,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UHeadsUpDisplay); \
 
 
 #define JobSimulator_Source_JobSimulator_HeadsUpDisplay_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__ProductHolding() { return STRUCT_OFFSET(UHeadsUpDisplay, ProductHolding); }
+	FORCEINLINE static uint32 __PPO__ProductHolding() { return STRUCT_OFFSET(UHeadsUpDisplay, ProductHolding); } \
+	FORCEINLINE static uint32 __PPO__DesiredProduct() { return STRUCT_OFFSET(UHeadsUpDisplay, DesiredProduct); } \
+	FORCEINLINE static uint32 __PPO__ParcelsLeft() { return STRUCT_OFFSET(UHeadsUpDisplay, ParcelsLeft); } \
+	FORCEINLINE static uint32 __PPO__TimeLeft() { return STRUCT_OFFSET(UHeadsUpDisplay, TimeLeft); }
 
 
 #define JobSimulator_Source_JobSimulator_HeadsUpDisplay_h_12_PROLOG

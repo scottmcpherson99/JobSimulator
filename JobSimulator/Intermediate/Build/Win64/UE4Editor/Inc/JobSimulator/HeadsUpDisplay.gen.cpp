@@ -36,6 +36,18 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProductHolding_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProductHolding;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DesiredProduct_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DesiredProduct;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ParcelsLeft_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ParcelsLeft;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TimeLeft_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TimeLeft;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -55,15 +67,51 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ProductHolding_MetaData[] = {
 		{ "BindWidget", "" },
 		{ "Category", "HeadsUpDisplay" },
-		{ "Comment", "///////////////////////////////////////////////////////////////////////////////////////////////////////////\n// <Components>\n//text to show the number of keys the player has\n" },
+		{ "Comment", "///////////////////////////////////////////////////////////////////////////////////////////////////////////\n// <Components>\n//text to show the product the player is holding\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "HeadsUpDisplay.h" },
-		{ "ToolTip", "<Components>\ntext to show the number of keys the player has" },
+		{ "ToolTip", "<Components>\ntext to show the product the player is holding" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ProductHolding = { "ProductHolding", nullptr, (EPropertyFlags)0x002008000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UHeadsUpDisplay, ProductHolding), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ProductHolding_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ProductHolding_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_DesiredProduct_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "Category", "HeadsUpDisplay" },
+		{ "Comment", "//text to show the desired product\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+		{ "ToolTip", "text to show the desired product" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_DesiredProduct = { "DesiredProduct", nullptr, (EPropertyFlags)0x002008000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UHeadsUpDisplay, DesiredProduct), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_DesiredProduct_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_DesiredProduct_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ParcelsLeft_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "Category", "HeadsUpDisplay" },
+		{ "Comment", "//text to show the number of parcels left\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+		{ "ToolTip", "text to show the number of parcels left" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ParcelsLeft = { "ParcelsLeft", nullptr, (EPropertyFlags)0x002008000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UHeadsUpDisplay, ParcelsLeft), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ParcelsLeft_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ParcelsLeft_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_TimeLeft_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "Category", "HeadsUpDisplay" },
+		{ "Comment", "//text to show the time left in the game\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+		{ "ToolTip", "text to show the time left in the game" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_TimeLeft = { "TimeLeft", nullptr, (EPropertyFlags)0x002008000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UHeadsUpDisplay, TimeLeft), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_TimeLeft_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_TimeLeft_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UHeadsUpDisplay_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ProductHolding,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_DesiredProduct,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ParcelsLeft,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_TimeLeft,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UHeadsUpDisplay_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UHeadsUpDisplay>::IsAbstract,
@@ -92,7 +140,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UHeadsUpDisplay, 3998463584);
+	IMPLEMENT_CLASS(UHeadsUpDisplay, 3044353584);
 	template<> JOBSIMULATOR_API UClass* StaticClass<UHeadsUpDisplay>()
 	{
 		return UHeadsUpDisplay::StaticClass();

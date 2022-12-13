@@ -22,3 +22,18 @@ void UHeadsUpDisplay::UpdateProductHolding()
 		ProductHolding->SetText(FText::FromString(playerCharacter->GetHoldingProduct()));
 	}
 }
+
+void UHeadsUpDisplay::SetDesiredProduct(FString desiredProduct_)
+{
+	DesiredProduct->SetText(FText::FromString(desiredProduct_));
+}
+
+void UHeadsUpDisplay::SetTimeLeft(FString timeLeft_)
+{
+	TimeLeft->SetText(FText::FromString(timeLeft_));
+}
+
+void UHeadsUpDisplay::SetParcelsLeft(FString parcelsLeft_)
+{
+	ParcelsLeft->SetText(FText::FromString(parcelsLeft_));
+}

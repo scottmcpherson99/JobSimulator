@@ -1,8 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include <memory>
 #include "DropOffBox.h"
 #include "PlayerCharacter.h"
+#include "JobSimulatorGameModeBase.h"
 #include "Components/BoxComponent.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -23,6 +24,12 @@ ADropOffBox::ADropOffBox()
 	//create the trigger box
 	TriggerBox = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComp"));
 	TriggerBox->SetupAttachment(RootComponent);
+}
+
+
+void ADropOffBox::ChooseRandomProduct(FString productChosen_)
+{
+	desiredProduct = productChosen_;
 }
 
 // Called when the game starts or when spawned
@@ -87,7 +94,17 @@ void ADropOffBox::OnInteraction()
 
 	if (playerCharacter != nullptr)
 	{
-		playerCharacter->SetHoldingProduct(FString("None"));
+		if (playerCharacter->GetHoldingProduct() == desiredProduct)
+		{
+			playerCharacter->SetHoldingProduct(FString("None"));
+
+			//find the current gamemode and update the players stats on the displayed widget
+			AJobSimulatorGameModeBase* gameMode = Cast<AJobSimulatorGameModeBase>((AJobSimulatorGameModeBase*)GetWorld()->GetAuthGameMode());
+			if (gameMode != nullptr)
+			{
+				gameMode->SetNextProduct();
+			}
+		}
 	}
 }
 
