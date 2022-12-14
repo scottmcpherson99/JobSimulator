@@ -125,6 +125,8 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
 D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Inc\JobSimulator\HeadsUpDisplay.generated.h
+D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Source\JobSimulator\EndGameHUD.h
+D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Inc\JobSimulator\EndGameHUD.generated.h
 D:\Unreal Projects\GitHub\JobSimulator\JobSimulator\Intermediate\Build\Win64\UE4Editor\Inc\JobSimulator\JobSimulatorGameModeBase.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h

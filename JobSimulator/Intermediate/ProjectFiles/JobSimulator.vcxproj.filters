@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\JobSimulator.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5A57A93B-7BBA-4D38-B98B-3EA75294A698}</UniqueIdentifier>
+      <UniqueIdentifier>{B9C28240-4676-4615-8980-7D7A7051888D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\JobSimulator.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{071FA53C-2AA0-4785-B607-295947D3E800}</UniqueIdentifier>
+      <UniqueIdentifier>{3D7DA9A7-4E0F-4546-8341-AFE7A279A949}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,12 +27,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\JobSimulator">
-      <UniqueIdentifier>{6EFEE3C6-332F-485A-BF7B-60F6E1B66C46}</UniqueIdentifier>
+      <UniqueIdentifier>{EC696FFA-5BF8-4524-BC1A-559597392446}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\JobSimulator\DropOffBox.cpp">
       <Filter>Source\JobSimulator</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\JobSimulator\DropOffBox.h">
+      <Filter>Source\JobSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\JobSimulator\EndGameHUD.cpp">
+      <Filter>Source\JobSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\JobSimulator\EndGameHUD.h">
       <Filter>Source\JobSimulator</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\JobSimulator\HeadsUpDisplay.cpp">
@@ -68,6 +74,30 @@
     <ClInclude Include="..\..\Source\JobSimulator\ProductBase.h">
       <Filter>Source\JobSimulator</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\JobSimulator\Product_Bag.cpp">
+      <Filter>Source\JobSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\JobSimulator\Product_Bag.h">
+      <Filter>Source\JobSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\JobSimulator\Product_Boot.cpp">
+      <Filter>Source\JobSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\JobSimulator\Product_Boot.h">
+      <Filter>Source\JobSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\JobSimulator\Product_Chair.cpp">
+      <Filter>Source\JobSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\JobSimulator\Product_Chair.h">
+      <Filter>Source\JobSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\JobSimulator\Product_Heel.cpp">
+      <Filter>Source\JobSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\JobSimulator\Product_Heel.h">
+      <Filter>Source\JobSimulator</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\JobSimulator\Product_Lamp.cpp">
       <Filter>Source\JobSimulator</Filter>
     </ClCompile>
@@ -78,6 +108,12 @@
       <Filter>Source\JobSimulator</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\JobSimulator\Product_Picture.h">
+      <Filter>Source\JobSimulator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\JobSimulator\Product_Plant.cpp">
+      <Filter>Source\JobSimulator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\JobSimulator\Product_Plant.h">
       <Filter>Source\JobSimulator</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\JobSimulator\Product_TV.cpp">
