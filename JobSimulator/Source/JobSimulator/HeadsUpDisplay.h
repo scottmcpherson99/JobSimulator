@@ -16,7 +16,7 @@ class JOBSIMULATOR_API UHeadsUpDisplay : public UUserWidget
 public:
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// <UpdatePlayerStats>
+	// <SetterandGetters>
 	//update the text displaying the product the player is holding
 	void UpdateProductHolding();
 
@@ -29,7 +29,9 @@ public:
 	// set the number of parcelks left
 	void SetParcelsLeft(FString parcelsLeft_);
 
-	// </UpdatePlayerStats>
+	// set the interaction message
+	void SetInteractMessage(FString interactMessage_);
+	// </SetterandGetters>
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -54,6 +56,10 @@ protected:
 	//text to show the time left in the game
 	UPROPERTY(BlueprintReadOnly, meta = (BindWidget))
 		class UTextBlock* TimeLeft;
+
+	//text to show if the player can interact with an object
+	UPROPERTY(BlueprintReadOnly, meta = (BindWidget))
+		class UTextBlock* InteractMessage;
 	// </Components>
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////
 };

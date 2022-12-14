@@ -72,6 +72,13 @@ void ADropOffBox::OnTriggerBoxOverlap(UPrimitiveComponent* OverlappedComponent, 
 	if (playerCharacter != nullptr && playerController != nullptr)
 	{
 		EnableInput(playerController);
+
+		//find the current gamemode and update the players stats on the displayed widget
+		AJobSimulatorGameModeBase* gameMode = Cast<AJobSimulatorGameModeBase>((AJobSimulatorGameModeBase*)GetWorld()->GetAuthGameMode());
+		if (gameMode != nullptr)
+		{
+			gameMode->GetGameWidget()->SetInteractMessage("Press 'E' to drop " + playerCharacter->GetHoldingProduct());
+		}
 	}
 }
 
@@ -84,6 +91,12 @@ void ADropOffBox::OnComponentEndOverlap(UPrimitiveComponent* OverlappedComponent
 	if (playerCharacter != nullptr && playerController != nullptr)
 	{
 		DisableInput(playerController);
+		//find the current gamemode and update the players stats on the displayed widget
+		AJobSimulatorGameModeBase* gameMode = Cast<AJobSimulatorGameModeBase>((AJobSimulatorGameModeBase*)GetWorld()->GetAuthGameMode());
+		if (gameMode != nullptr)
+		{
+			gameMode->GetGameWidget()->SetInteractMessage("");
+		}
 	}
 }
 

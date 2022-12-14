@@ -48,6 +48,10 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TimeLeft_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TimeLeft;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractMessage_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InteractMessage;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -107,11 +111,23 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_TimeLeft = { "TimeLeft", nullptr, (EPropertyFlags)0x002008000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UHeadsUpDisplay, TimeLeft), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_TimeLeft_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_TimeLeft_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_InteractMessage_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "Category", "HeadsUpDisplay" },
+		{ "Comment", "//text to show if the player can interact with an object\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "HeadsUpDisplay.h" },
+		{ "ToolTip", "text to show if the player can interact with an object" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_InteractMessage = { "InteractMessage", nullptr, (EPropertyFlags)0x002008000008001c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UHeadsUpDisplay, InteractMessage), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_InteractMessage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_InteractMessage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UHeadsUpDisplay_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ProductHolding,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_DesiredProduct,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_ParcelsLeft,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_TimeLeft,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHeadsUpDisplay_Statics::NewProp_InteractMessage,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UHeadsUpDisplay_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UHeadsUpDisplay>::IsAbstract,
@@ -140,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeHeadsUpDisplay() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UHeadsUpDisplay, 3044353584);
+	IMPLEMENT_CLASS(UHeadsUpDisplay, 4278838256);
 	template<> JOBSIMULATOR_API UClass* StaticClass<UHeadsUpDisplay>()
 	{
 		return UHeadsUpDisplay::StaticClass();

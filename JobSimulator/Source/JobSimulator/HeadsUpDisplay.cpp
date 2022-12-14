@@ -9,8 +9,11 @@
 void UHeadsUpDisplay::Construct()
 {
 	UpdateProductHolding();
+	SetInteractMessage("");
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// <SetterandGetters>
 void UHeadsUpDisplay::UpdateProductHolding()
 {
 	// update the player's holding item on the widget
@@ -37,3 +40,11 @@ void UHeadsUpDisplay::SetParcelsLeft(FString parcelsLeft_)
 {
 	ParcelsLeft->SetText(FText::FromString(parcelsLeft_));
 }
+
+void UHeadsUpDisplay::SetInteractMessage(FString interactMessage_)
+{
+	InteractMessage->SetText(FText::FromString(interactMessage_));
+}
+
+// </SetterandGetters>
+///////////////////////////////////////////////////////////////////////////////////////////////////////////

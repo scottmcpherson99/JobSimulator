@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeJobSimulator_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF4694DC7,
+				0xB95346E7,
 				0x211FA7F1,
 				METADATA_PARAMS(nullptr, 0)
 			};
